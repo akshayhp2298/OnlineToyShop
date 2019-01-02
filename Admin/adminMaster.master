@@ -1,0 +1,149 @@
+﻿<%@ Master Language="VB" CodeFile="adminMaster.master.vb" Inherits="Admin_adminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+       <!--CUSTOM BASIC STYLES-->
+    <link href="assets/css/basic.css" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+   
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form runat="server">
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    
+                </button>
+                <a class="navbar-brand" href="/OnlineToyShop/Admin/AdminMainPage.aspx">Mehta Toy Shop</a>
+            <br />
+            </div>
+
+            <div class="header-right">
+
+              <asp:LinkButton class="btn btn-danger" ID="LinkButton1" runat="server">logout</asp:LinkButton>
+
+            </div>
+        </nav>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <div class="user-img-div">
+                            <img src="/OnlineToyShop/images/user.png" class="img-thumbnail" />
+
+                            <div class="inner-text">
+                                WELCOME... <br /><asp:Literal ID="UserNameLiteral" runat="server"></asp:Literal>
+                            <br />
+                                
+                            </div>
+                           
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <a class="active-menu" href="/OnlineToyShop/Admin/AdminMainPage.aspx"><i class="fa fa-dashboard "></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="/OnlineToyShop/Admin/City.aspx"><i class="fa fa-table "></i>City</a>
+                    </li>
+                     <li>
+                        <a href="/OnlineToyShop/Admin/Area.aspx"><i class="fa fa-table "></i>Area</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-folder"></i>Products<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/OnlineToyShop/Admin/Product/Product.aspx"><i class="fa fa-table"></i>Product</a>
+                            </li>
+                             <li>
+                                <a href="/OnlineToyShop/Admin/Product/Category.aspx"><i class="fa fa-table"></i>Category</a>
+                            </li>
+                              <li>
+                                <a href="/OnlineToyShop/Admin/Product/Subcategory.aspx"><i class="fa fa-table"></i>Sub-Category</a>
+                            </li>
+                              <li>
+                                <a href="/OnlineToyShop/Admin/Product/Brand.aspx"><i class="fa fa-table"></i>Brand</a>
+                            </li>
+                             
+                            
+                            
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/OnlineToyShop/Admin/Offers.aspx"><i class="fa fa-magic"></i>Offer</a>
+                    </li>
+                    <li>
+                                <a href="/OnlineToyShop/Admin/Purchase.aspx"><i class="fa fa-table"></i>Purchase</a>
+                            </li>
+                     <li>
+                        <a href="#"><i class="fa fa-folder"></i>User<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/OnlineToyShop/Admin/user/Admin.aspx"><i class="fa fa-user"></i>Admin</a>
+                            </li>
+                             <li>
+                                <a href="/OnlineToyShop/Admin/user/Customer.aspx"><i class="fa fa-user"></i>Customer</a>
+                            </li>
+                              <li>
+                                <a href="/OnlineToyShop/Admin/user/Supplier.aspx"><i class="fa fa-user"></i>Supplier</a>
+                            </li>
+                              
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/OnlineToyShop/Admin/SalesReturn.aspx"><i class="fa fa-magic"></i>Sales_return</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+               <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+        
+        </asp:ContentPlaceHolder>          
+
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+
+    <div id="footer-sec">
+       
+    </div>
+</form>
+    <!-- /. FOOTER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="/OnlineToyShop/Admin/assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="/OnlineToyShop/Admin/assets/js/bootstrap.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="/OnlineToyShop/Admin/assets/js/jquery.metisMenu.js"></script>
+       <!-- CUSTOM SCRIPTS -->
+    <script src="/OnlineToyShop/Admin/assets/js/custom.js"></script>
+    
+
+
+</body>
+</html>

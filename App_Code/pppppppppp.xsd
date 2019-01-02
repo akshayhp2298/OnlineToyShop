@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="pppppppppp" targetNamespace="http://tempuri.org/pppppppppp.xsd" xmlns:mstns="http://tempuri.org/pppppppppp.xsd" xmlns="http://tempuri.org/pppppppppp.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="OTSProjectConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="OTSProjectConnectionString2 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.OTSProjectConnectionString2.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PurchaseViewTableAdapter" GeneratorDataComponentClassName="PurchaseViewTableAdapter" Name="PurchaseView" UserDataComponentName="PurchaseViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OTSProjectConnectionString2 (Web.config)" DbObjectName="dbo.PurchaseView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT purchase_id, s_id, purchase_date, amount, tax, p_id, qty FROM dbo.PurchaseView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="purchase_id" DataSetColumn="purchase_id" />
+              <Mapping SourceColumn="s_id" DataSetColumn="s_id" />
+              <Mapping SourceColumn="purchase_date" DataSetColumn="purchase_date" />
+              <Mapping SourceColumn="amount" DataSetColumn="amount" />
+              <Mapping SourceColumn="tax" DataSetColumn="tax" />
+              <Mapping SourceColumn="p_id" DataSetColumn="p_id" />
+              <Mapping SourceColumn="qty" DataSetColumn="qty" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="pppppppppp" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="pppppppppp" msprop:Generator_UserDSName="pppppppppp">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PurchaseView" msprop:Generator_TableClassName="PurchaseViewDataTable" msprop:Generator_TableVarName="tablePurchaseView" msprop:Generator_RowChangedName="PurchaseViewRowChanged" msprop:Generator_TablePropName="PurchaseView" msprop:Generator_RowDeletingName="PurchaseViewRowDeleting" msprop:Generator_RowChangingName="PurchaseViewRowChanging" msprop:Generator_RowEvHandlerName="PurchaseViewRowChangeEventHandler" msprop:Generator_RowDeletedName="PurchaseViewRowDeleted" msprop:Generator_RowClassName="PurchaseViewRow" msprop:Generator_UserTableName="PurchaseView" msprop:Generator_RowEvArgName="PurchaseViewRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="purchase_id" msprop:Generator_ColumnVarNameInTable="columnpurchase_id" msprop:Generator_ColumnPropNameInRow="purchase_id" msprop:Generator_ColumnPropNameInTable="purchase_idColumn" msprop:Generator_UserColumnName="purchase_id" type="xs:int" />
+              <xs:element name="s_id" msprop:Generator_ColumnVarNameInTable="columns_id" msprop:Generator_ColumnPropNameInRow="s_id" msprop:Generator_ColumnPropNameInTable="s_idColumn" msprop:Generator_UserColumnName="s_id" type="xs:int" minOccurs="0" />
+              <xs:element name="purchase_date" msprop:Generator_ColumnVarNameInTable="columnpurchase_date" msprop:Generator_ColumnPropNameInRow="purchase_date" msprop:Generator_ColumnPropNameInTable="purchase_dateColumn" msprop:Generator_UserColumnName="purchase_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="amount" msprop:Generator_ColumnVarNameInTable="columnamount" msprop:Generator_ColumnPropNameInRow="amount" msprop:Generator_ColumnPropNameInTable="amountColumn" msprop:Generator_UserColumnName="amount" type="xs:int" minOccurs="0" />
+              <xs:element name="tax" msprop:Generator_ColumnVarNameInTable="columntax" msprop:Generator_ColumnPropNameInRow="tax" msprop:Generator_ColumnPropNameInTable="taxColumn" msprop:Generator_UserColumnName="tax" type="xs:int" minOccurs="0" />
+              <xs:element name="p_id" msprop:Generator_ColumnVarNameInTable="columnp_id" msprop:Generator_ColumnPropNameInRow="p_id" msprop:Generator_ColumnPropNameInTable="p_idColumn" msprop:Generator_UserColumnName="p_id" type="xs:int" />
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
